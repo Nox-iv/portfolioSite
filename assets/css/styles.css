@@ -348,7 +348,7 @@ html {
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
     .projectsGrid {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
@@ -369,7 +369,7 @@ html {
     }
 
     .project {
-        height: 250px;
+        height: 275px;
         width: calc((100vw - 6rem - 150px)*0.9)
     }
 }

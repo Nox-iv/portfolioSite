@@ -13,7 +13,7 @@ $(document).ready(function () {
                 .css("display", "flex")
                 .hide()
                 .fadeIn(300);
-            particlesJS.load('particleContainer', 'controller/particles.json?ver=1.0.0');
+            particlesJS.load('particleContainer', 'controller/particles.json?ver=1.0.1');
         }
     });
     window.addEventListener("resize", function () {
@@ -39,6 +39,10 @@ $(document).ready(function () {
 
     $('#leetCodeProject').on('mousedown', (e) => { openProject(e, "https://github.com/Nox-iv/LeetCode-Solutions"); });
     $('#portfolioProject').on('mousedown', (e) => { openProject(e, "https://github.com/Nox-iv/portfolioSite"); });
+    $('#censorBotProject').on('mousedown', (e) => { openProject(e, "https://github.com/Nox-iv/censor.js"); });
+    $('#cppProject').on('mousedown', (e) => { openProject(e, "https://github.com/Nox-iv/cppOpperatorOverloading"); });
+    $('#algoVisProject').on('mousedown', (e) => { openProject(e, "https://nox-iv.com/pathfinding-visualizer"); });
+    $('#mockSocialProject').on('mousedown', (e) => { openProject(e, "https://nox-iv.com/social-media"); });
 
 });
 
