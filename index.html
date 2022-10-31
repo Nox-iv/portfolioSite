@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>Thomas Gordge</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./controller/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/logoAnimation.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/media/logoLightSM.svg">
+
+</head>
+
+<body ontouchstart="">
+
+  <div id="logoAnimation" class="w-100 h-100 svgContainer">
+    <svg id="openingLogoSVG" class="svgElement" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2500 2500"
+      style="enable-background:new 0 0 2500 2500;" xml:space="preserve">
+      <g id="main">
+        <g>
+          <polygon id="pathBaseEle" class="pathBase"
+            points="1996.2,819.2 1775.1,691.5 1554,819.2 1775.1,946.8 1775.1,1202.1 1996.2,1074.5 		" />
+          <polygon class="pathBase" points="1250,388.4 1028.9,516 1028.9,771.3 1250,643.7 1471.1,771.3 1471.1,516 		" />
+          <polygon class="pathBase"
+            points="503.8,819.2 503.8,1074.5 724.9,1202.1 724.9,946.8 946,819.2 724.9,691.5 		" />
+          <polygon class="pathBase"
+            points="503.8,1680.8 724.9,1808.5 946,1680.8 724.9,1553.2 724.9,1297.9 503.8,1425.5 		" />
+          <polygon class="pathBase"
+            points="1250,2111.6 1471.1,1984 1471.1,1728.7 1250,1856.3 1028.9,1728.7 1028.9,1984 		" />
+          <polygon class="pathBase"
+            points="1996.2,1680.8 1996.2,1425.5 1775.1,1297.9 1775.1,1553.2 1554,1680.8 1775.1,1808.5 		" />
+          <polygon class="pathBase" points="1735.5,409.1 1514.4,536.7 1514.4,792 1735.5,664.4 		" />
+          <polygon class="pathBase" points="2221,1250 1999.9,1122.4 1778.8,1250 1999.9,1377.6 		" />
+          <polygon class="pathBase" points="1735.5,2090.9 1735.5,1835.6 1514.4,1708 1514.4,1963.3 		" />
+          <polygon class="pathBase" points="764.5,2090.9 985.6,1963.3 985.6,1708 764.5,1835.6 		" />
+          <polygon class="pathBase" points="279,1250 500.1,1377.6 721.2,1250 500.1,1122.4 		" />
+          <polygon class="pathBase" points="764.5,409.1 764.5,664.4 985.6,792 985.6,536.7 		" />
+          <polygon class="pathBase" points="1028.9,867.1 1250,994.7 1471.1,867.1 1471.1,1122.4 1692.2,1250 1471.1,1377.6 1471.1,1632.9 
+     1250,1505.3 1028.9,1632.9 1028.9,1377.6 807.8,1250 1028.9,1122.4 		" />
+        </g>
+      </g>
+      <g id="ring">
+        <polygon id="openingLogoPath" class="outerPath"
+          points="1250,27.1 191,638.6 191,1861.4 1250,2472.9 2309,1861.4 2309,638.6 	" />
+      </g>
+    </svg>
+  </div>
+
+  <main id="mainContent" class="content">
+
+    <nav class="sideBar">
+      <div class="sideBarLogo">
+        <a href="https://www.Nox-iv.com"><img src="./assets/media/logoLightMX.svg" alt="logo"></a>
+        <div></div>
+      </div>
+      <div class="sideBarNavigation">
+        <div class="navigationList">
+          <li onclick="pageScroll('#aboutSection')">About</li>
+          <li onclick="pageScroll('#skillsSection')">Skills</li>
+          <li onclick="pageScroll('#projectSection')">Projects</li>
+          <li onclick="pageScroll('#contactSection')">Contact</li>
+          <li>Resume</li>
+        </div>
+      </div>
+      <div class="sideBarSocials">
+        <div class="sideBarSocialsDivider"></div>
+        <div class="sideBarSocialsLogos">
+          <a href="https://github.com/Nox-iv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/nox-iv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+            </svg>
+          </a>
+          <a href="https://twitter.com/NNox_iv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <button id="navbarExpand" class="navbarExpand" onclick="navbarToggle()"><i id="navbarExpandIcon"
+          class="fa-solid fa-bars"></i></button>
+    </nav>
+    <nav class="navbarDD" id="navbarDD">
+      <div id="navbarList" class="navigationList">
+        <li onclick="pageScroll('#aboutSection')">About</li>
+        <li onclick="pageScroll('#skillsSection', 75)">Skills</li>
+        <li onclick="pageScroll('#projectSection', 75)">Projects</li>
+        <li onclick="pageScroll('#contactSection', 75)">Contact</li>
+        <li>Resume</li>
+      </div>
+    </nav>
+    <section class="mainPage">
+      <div id="particleContainer" class="particleContainer"></div>
+      <section id="aboutSection" class="aboutSection"">
+        <div class="raisedElement">
+          <h1>Hi,</h1>
+          <h1>I'm <span class="accentText">Thomas</span></h1>
+        <h2>Full Stack Web Developer</h2>
+        <p class="blockText">
+          I'm a software engineer with experience of the full stack, Specialising towards the back-end in particular with a focus on Node.js/Javascript. <br>
+          I have a great curiosity for technology and a passion for learning new things. I'm always looking for new challenges and opportunities to grow as a developer. <br>
+          Currently, I'm working towards a bachelor's degree in <span class="accentText">Computer Science (BSc)</span> at Sheffield Hallam University.
+        </p>
+        </div>
+      </section>
+      <section id="skillsSection" class="skillsSection"">
+        <div>        
+          <div class="raisedElement">
+            <h2 class="accentText">Skills & Experience:</h2>
+            <br>
+            <p class="blockText">
+              I started coding over seven years ago, choosing <span class="accentText">Computer Science</span> as one of my GCSE options. 
+              I've been coding ever since and have been lucky enough to have the opportunity to work on various projects and technologies, 
+              which has helped broaden my understanding of the field and further develop me as a developer.
+
+              <br><br>
+              I recently gained some industry experience working as a full-stack developer, where I worked on various projects; 
+              this gave me <span class="accentText">invaluable experience</span> in the field and helped further my competency as a developer. 
+              While working there, I was able to have exposure to various new <span class="accentText">frameworks</span>, <span class="accentText">workflows</span>, and <span class="accentText">development practices</span>.
+
+              <br><br>
+              I'm currently pursuing a bachelor's degree in Computer Science at <span class="accentText">Sheffield Hallam University</span>, 
+              which teaches me new concepts and techniques to increase my proficiency and knowledge as a software engineer.
+
+              <br><br>
+              I'm now looking for a <span class="accentText">placement year</span> for my degree to gain more industry experience and help myself grow as a developer.
+            </p>
+          </div>
+          <div class="raisedElement skillsBlock">
+            <div class="skillBars" id="skillBars">
+              <h2 class="accentText">Languages:</h2>
+              <br>
+              <div class="jsSkillBar" id="jsSkillBar">
+                <b>Javascript (ES6)</b>
+                <div><div></div></div>
+              </div>
+              <div class="javaSkillBar" id="javaSkillBar">
+                <b>Java</b>
+                <div><div></div></div>
+              </div>
+              <div class="phpSkillBar" id="phpSkillBar">
+                <b>PHP</b>
+                <div><div></div></div>
+              </div>
+              <div class="dbSkillBar" id="dbSkillBar">
+                <b>Database's</b>
+                <div><div></div></div>
+              </div>
+              <div class="htmlSkillBar" id="htmlSkillBar">
+                <b>HTML and CSS</b>
+                <div><div></div></div>
+              </div>
+            </div>
+            <div>
+              <h2 class="accentText">Recent technologies:</h2>
+              <p class="blockText">Here are a few technologies I've been working with recently</p>
+              <br>
+              <div class="skillsTechList blockText">
+                  <div>
+                    <span>Node.js</span><br>
+                    <span>Discord.js</span><br>
+                    <span>Knockout.js</span><br>
+                    <span>Charts.js</span><br>
+                  </div>
+                  <div>
+                    <span>MongoDB</span><br>
+                    <span>MySQL</span><br>
+                    <span>c++</span><br>
+                    <span>Java sockets</span><br>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projectSection" class="projectSection"">
+        <div class="projectsGrid">
+
+
+
+          <div class="project" id="leetCodeProject">
+            <div class="projectTitle">
+              <i class="fa-regular fa-folder"></i>
+              <h4>Leetcode Challenges</h4>
+            </div>
+            <p class="blockText">
+              I've been working on a few leetcode challenges recently, I've been posting my solutions and thought process on my github.
+              These challenges have helped me improve my problem solving skills and helped me learn new techniques and algorithms.
+            </p>
+            <div class="projectLinks">
+              <a href="https://github.com/Nox-iv/LeetCode-Solutions">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/Nox-IV/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project" id="leetCodeProject">
+            <div class="projectTitle">
+              <i class="fa-regular fa-folder"></i>
+              <h4>Leetcode Challenges</h4>
+            </div>
+            <p class="blockText">
+              I've been working on a few leetcode challenges recently, I've been posting my solutions and thought process on my github.
+              These challenges have helped me improve my problem solving skills and helped me learn new techniques and algorithms.
+            </p>
+            <div class="projectLinks">
+              <a href="https://github.com/Nox-iv/LeetCode-Solutions">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/Nox-IV/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project" id="leetCodeProject">
+            <div class="projectTitle">
+              <i class="fa-regular fa-folder"></i>
+              <h4>Leetcode Challenges</h4>
+            </div>
+            <p class="blockText">
+              I've been working on a few leetcode challenges recently, I've been posting my solutions and thought process on my github.
+              These challenges have helped me improve my problem solving skills and helped me learn new techniques and algorithms.
+            </p>
+            <div class="projectLinks">
+              <a href="https://github.com/Nox-iv/LeetCode-Solutions">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/Nox-IV/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project" id="leetCodeProject">
+            <div class="projectTitle">
+              <i class="fa-regular fa-folder"></i>
+              <h4>Leetcode Challenges</h4>
+            </div>
+            <p class="blockText">
+              I've been working on a few leetcode challenges recently, I've been posting my solutions and thought process on my github.
+              These challenges have helped me improve my problem solving skills and helped me learn new techniques and algorithms.
+            </p>
+            <div class="projectLinks">
+              <a href="https://github.com/Nox-iv/LeetCode-Solutions">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/Nox-IV/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project" id="leetCodeProject">
+            <div class="projectTitle">
+              <i class="fa-regular fa-folder"></i>
+              <h4>Leetcode Challenges</h4>
+            </div>
+            <p class="blockText">
+              I've been working on a few leetcode challenges recently, I've been posting my solutions and thought process on my github.
+              These challenges have helped me improve my problem solving skills and helped me learn new techniques and algorithms.
+            </p>
+            <div class="projectLinks">
+              <a href="https://github.com/Nox-iv/LeetCode-Solutions">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/Nox-IV/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project" id="leetCodeProject">
+            <div class="projectTitle">
+              <i class="fa-regular fa-folder"></i>
+              <h4>Leetcode Challenges</h4>
+            </div>
+            <p class="blockText">
+              I've been working on a few leetcode challenges recently, I've been posting my solutions and thought process on my github.
+              These challenges have helped me improve my problem solving skills and helped me learn new techniques and algorithms.
+            </p>
+            <div class="projectLinks">
+              <a href="https://github.com/Nox-iv/LeetCode-Solutions">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://leetcode.com/Nox-IV/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+
+      </section>
+      <section id="contactSection" class="contactSection"">
+
+      </section>
+    </section>
+    <footer class="footer">
+        <div class="sideBarSocialsLogos">
+          <a href="https://github.com/Nox-iv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/nox-iv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+            </svg>
+          </a>
+          <a href="https://twitter.com/NNox_iv">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+            </svg>
+          </a>
+        </div>
+        <div class="footerCopyright">
+          <div class="sideBarSocialsDivider"></div>
+          <di>© 2022 Thomas Gordge
+        </div>
+        </div>
+        </footer>
+  </main>
+</body>
+
+</html>

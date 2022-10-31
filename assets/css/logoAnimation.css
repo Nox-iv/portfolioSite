@@ -1,0 +1,73 @@
+.svgElement {
+    width: min(50%, 200px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.outerPath {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 50px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 7337.083984375;
+    stroke-dasharray: 7337.083984375;
+    transform-origin: center;
+
+    animation: outerLineAnimation 1.5s cubic-bezier(0.76, 0, 0.24, 1) forwards 0.3s, fadeOut 0.3s cubic-bezier(0.76, 0, 0.24, 1) 2.8s forwards;
+}
+
+.pathBase {
+    fill: #ffffff;
+    fill-opacity: 0%;
+    stroke: #ffffff;
+    stroke-width: 8;
+    stroke-opacity: 0;
+    transform-origin: center;
+    animation: fillOpacity 0.7s cubic-bezier(0.76, 0, 0.24, 1) forwards 1.8s, fadeOut 0.3s cubic-bezier(0.76, 0, 0.24, 1) 2.8s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes outerLineAnimation {
+    0% {
+        stroke-dashoffset: 7337.083984375;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillOpacity {
+    0% {
+        fill-opacity: 0%;
+    }
+
+    100% {
+        fill-opacity: 100%;
+    }
+}
+
+@keyframes strokeOpacity {
+    0% {
+        stroke-opacity: 0%;
+    }
+
+    100% {
+        stroke-opacity: 100%;
+    }
+}

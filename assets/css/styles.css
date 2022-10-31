@@ -1,0 +1,605 @@
+:root {
+    --Colour1: #121212;
+    --Colour2: #1e1e1e;
+    --Colour3: #232323;
+    --Colour4: #252525;
+    --Colour5: #272727;
+    --Colour6: #2c2c2c;
+    --Colour7: #2e2e2e;
+    --Colour8: #333333;
+    --Colour9: #363636;
+    --Colour10: #383838;
+    --AccentColour: rgb(77, 238, 234);
+    --BlockTextColour: rgb(200, 200, 200);
+}
+
+body {
+    background-color: var(--Colour1);
+}
+
+body,
+html {
+    height: 100%;
+}
+
+
+.particleContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.raisedElement {
+    z-index: 2;
+}
+
+.content {
+    display: none;
+}
+
+.svgContainer {
+    background-color: var(--Colour1);
+    position: absolute;
+    z-index: 99999;
+    animation: fadeOut 0.3s cubic-bezier(0.76, 0, 0.24, 1) 2.8s forwards;
+}
+
+.sideBar {
+    background-color: var(--Colour2);
+    height: 100vh;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    z-index: 999999;
+}
+
+.sideBarLogo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBarLogo>a>img {
+    height: 75px;
+    cursor: pointer;
+}
+
+.sideBarLogo>div {
+    width: 90%;
+    height: 2px;
+    background-color: var(--Colour5);
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.sideBarNavigation {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.sideBarNavigation>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigationList>li {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 2px;
+    list-style: none;
+    border-top: 2px solid var(--Colour5);
+    cursor: pointer;
+    transition: all 0.1s cubic-bezier(0.76, 0, 0.24, 1) 0.1s;
+}
+
+.navigationList>li:last-child {
+    border-bottom: 2px solid var(--Colour5);
+}
+
+.sideBarSocials {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBarSocialsDivider {
+    width: 90%;
+    height: 2px;
+    background-color: var(--Colour5);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.sideBarSocialsLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.sideBarSocialsLogos svg {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    transition: all 0.1s cubic-bezier(0.76, 0, 0.24, 1) 0.1s;
+}
+
+.sideBarSocialsLogos path {
+    fill: white;
+    transition: all 0.1s cubic-bezier(0.76, 0, 0.24, 1) 0.1s;
+}
+
+.navbarExpand {
+    display: none;
+}
+
+.navbarDD {
+    display: none;
+}
+
+.footer {
+    display: none;
+}
+
+.mainPage {
+    width: calc(100% - 150px);
+    margin-left: 150px;
+    position: relative;
+}
+
+.aboutSection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
+
+.accentText {
+    color: var(--AccentColour);
+}
+
+.blockText {
+    color: var(--BlockTextColour);
+}
+
+.skillsSection {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
+
+.skillsSection>div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.skillsSection>div>div {
+    width: calc(50% - 1rem);
+}
+
+.skillsSection>div>div:nth-child(1) {
+    margin-right: 1rem;
+}
+
+.skillsSection>div>div:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.skillsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skillsBlock>div:nth-child(1) {
+    margin-bottom: 0.5rem;
+}
+
+.skillsBlock>div:nth-child(2) {
+    margin-top: 0.5rem;
+}
+
+.skillBars>div {
+    margin-bottom: 0.5rem;
+}
+
+.skillBars>div:last-child {
+    margin-bottom: 0;
+}
+
+.skillBars>div>div {
+    width: 100%;
+    height: 3px;
+    background-color: var(--Colour5);
+    margin-top: .25rem;
+}
+
+.skillBars>div>div>div {
+    display: block;
+    height: 3px;
+    width: 0%;
+}
+
+.jsSkillBar>div>div {
+    background-color: var(--AccentColour);
+}
+
+.javaSkillBar>div>div {
+    background-color: #BC13FE;
+}
+
+.phpSkillBar>div>div {
+    background-color: #FF3131;
+}
+
+.dbSkillBar>div>div {
+    background-color: #7FFF00;
+}
+
+.htmlSkillBar>div>div {
+    background-color: #FF7F00;
+}
+
+.skillsTechList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skillsTechList>div>span::before {
+    color: var(--AccentColour);
+    content: '▹';
+}
+
+.projectSection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+}
+
+.project {
+    height: min(calc((100vw - 6rem - 150px)/3), 450px);
+    width: min(calc((100vw - 6rem - 150px)/3), 450px);
+    background-color: var(--Colour5);
+    z-index: 2;
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+    cursor: pointer;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project:hover {
+    box-shadow: inset 0 0 0 4px var(--AccentColour), 0 0 1px rgb(0 0 0 / 0%);
+}
+
+.project p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.projectTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.projectTitle h4 {
+    margin: 0px;
+}
+
+.projectTitle i {
+    color: var(--AccentColour);
+    font-size: 2.5rem;
+}
+
+.projectLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.projectLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.projectLinks i:hover {
+    color: var(--AccentColour);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .projectsGrid {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .project {
+        height: calc((100vw - 6rem - 150px)/2);
+        width: calc((100vw - 6rem - 150px)/2);
+    }
+
+    
+}
+
+@media screen and (max-width: 900px) {
+    .projectsGrid {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+    .project {
+        height: 250px;
+        width: calc((100vw - 6rem - 150px)*0.9)
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .project {
+        height: 350px;
+    }
+}
+
+.contactSection {
+    height: 100vh;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(150, 150, 150, 0.3);
+    border-radius: 5px;
+}
+
+@media (hover: hover) {
+    .navigationList>li:hover {
+        color: var(--AccentColour);
+        transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    .sideBarSocialsLogos svg:hover path {
+        fill: var(--AccentColour);
+        transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    .navbarExpand:hover {
+        color: var(--AccentColour);
+        border-color: var(--AccentColour);
+        transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+}
+
+.navigationList>li:active {
+    transform: scale(1.1, 1.1);
+    color: var(--AccentColour);
+    transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.sideBarSocialsLogos svg:active path {
+    fill: var(--AccentColour);
+    transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.sideBarSocialsLogos svg:active {
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.navbarExpand:active {
+    transform: scale(1.1, 1.1);
+    color: var(--AccentColour);
+    border-color: var(--AccentColour);
+    transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+@media screen and (max-width: 768px) {
+
+    .sideBarLogo>div {
+        display: none;
+    }
+
+    .sideBarNavigation {
+        display: none;
+    }
+
+    .sideBarSocials {
+        display: none;
+    }
+
+
+
+
+    .content {
+        flex-direction: column;
+    }
+
+    .sideBar {
+        width: 100%;
+        min-height: 75px;
+        height: 75px;
+        flex-direction: row;
+    }
+
+    .sideBarLogo {
+        width: auto;
+        display: block;
+    }
+
+    .sideBarLogo>a>img {
+        height: 50px;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .navbarExpand {
+        padding: 0px;
+        display: block;
+        margin-right: 1rem;
+        height: 40px;
+        width: 40px !important;
+        border-radius: 10px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.1s cubic-bezier(0.76, 0, 0.24, 1) 0.1s;
+    }
+
+
+
+
+    .navigationList>li:last-child {
+
+        border-bottom: none;
+    }
+
+    .navbarDD {
+        width: 100%;
+        display: none;
+        background-color: var(--Colour2);
+        padding-top: 1rem;
+        color: white;
+        text-align: center;
+        border-radius: 0px 0px 15px 15px;
+        position: fixed;
+        top: 74px;
+        z-index: 99999;
+    }
+
+    .navbarDD>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        background-color: var(--Colour2);
+        width: 100%;
+        height: 125px;
+        min-height: 125px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        z-index: 999999;
+    }
+
+    .sideBarSocialsLogos {
+        width: auto;
+    }
+
+    .sideBarSocialsLogos svg {
+        height: 40px;
+        width: 40px;
+    }
+
+    .sideBarSocialsLogos a:nth-child(2) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .sideBarSocialsDivider {
+        margin-bottom: 0.25rem;
+    }
+
+    .footerCopyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: #919191;
+    }
+
+    .mainPage {
+        top: 75px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .aboutSection {
+        height: calc(100vh - 75px);
+    }
+
+    .skillsSection {
+        min-height: calc(100vh - 75px);
+        height: auto;
+    }
+
+    .projectSection {
+        height: auto;
+        min-height: calc(100vh - 75px);
+    }
+
+    .contactSection {
+        height: calc(100vh - 75px);
+    }
+
+    .skillsSection>div>div {
+        width: 100%;
+        margin: 0 !important;
+        flex-direction: column;
+    }
+
+    .skillsSection>div {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project {
+        width: calc((100vw - 2rem)*0.9);
+    }
+
+}
