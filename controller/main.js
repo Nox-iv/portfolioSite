@@ -1,5 +1,8 @@
 "use strict";
 var observer = new IntersectionObserver(skillBarsInView, { threshold: [0.5] });
+var particleJson;
+fetch('./controller/particles.json')
+  .then((response) => particleJson = response.json())
 
 $(document).ready(function () {
     $("#openingLogoPath")[0].addEventListener("animationend", function (e) {
