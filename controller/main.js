@@ -13,7 +13,7 @@ $(document).ready(function () {
                 .css("display", "flex")
                 .hide()
                 .fadeIn(300);
-            particlesJS.load('particleContainer', particleOptions);
+            particlesJS.load('particleContainer', './controller/particles.json');
         }
     });
     window.addEventListener("resize", function () {

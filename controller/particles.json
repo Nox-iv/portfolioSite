@@ -1,4 +1,4 @@
-var particleOptions = {
+{
     "particles": {
       "number": {
         "value": 60,
