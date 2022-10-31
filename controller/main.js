@@ -37,11 +37,8 @@ $(document).ready(function () {
     };
     observer.observe($("#skillBars")[0]);
 
-
-    $('#leetCodeProject').on('mousedown', (e) => { 
-        if($(e.target).is('i')) return;
-        (e.which == 1) ? location.href = "https://github.com/Nox-iv/LeetCode-Solutions" : window.open("https://github.com/Nox-iv/LeetCode-Solutions"); 
-    });
+    $('#leetCodeProject').on('mousedown', (e) => { openProject(e, "https://github.com/Nox-iv/LeetCode-Solutions"); });
+    $('#portfolioProject').on('mousedown', (e) => { openProject(e, "https://github.com/Nox-iv/portfolioSite"); });
 
 });
 
@@ -68,4 +65,9 @@ function skillBarsInView(e, o) {
 
 function sbAnimate(skillBarEle, width, delay) {
     $($(`#${skillBarEle}`)[0].lastElementChild.lastElementChild).delay(delay).animate({ width: width, easing: "cubic-bezier(0.76, 0, 0.24, 1)" }, 750);
+}
+
+function openProject(e, link) {
+    if ($(e.target).is('i')) return;
+    (e.which == 1) ? location.href = link : window.open(link);
 }
