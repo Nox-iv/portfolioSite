@@ -436,6 +436,10 @@ html {
         margin-top: 35vh;
     }
 
+    .contactSection {
+        margin-top: 35vh;
+    }
+
     .projectsGrid {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
