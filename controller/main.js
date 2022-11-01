@@ -75,3 +75,14 @@ function openProject(e, link) {
     if ($(e.target).is('i')) return;
     (e.which == 1) ? location.href = link : window.open(link);
 }
+
+function contactForm(name, email, subject, message, event){
+    event.preventDefault();
+    console.log(name, email, subject, message, event);
+    $("#contactContainer").slideUp(500, () => {
+        $("#contactSuccess")
+        .css("display", "flex")
+        .hide()
+        .fadeIn(300);
+    });
+}

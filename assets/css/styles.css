@@ -277,9 +277,11 @@ html {
     justify-content: center;
     padding: 2rem;
     color: white;
+    flex-direction: column;
 }
 
 .projectsGrid {
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -346,9 +348,94 @@ html {
     color: var(--AccentColour);
 }
 
+.contactSection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    flex-direction: column;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contactSuccess {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactForm {
+    z-index: 2;
+    width: 100%;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: var(--Colour5)!important;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+    color: white;
+}
+
+.contactForm input:focus-visible,
+.contactForm textarea:focus-visible {
+    outline-offset: none;
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--AccentColour), 0 0 1px rgb(0 0 0 / 0%);
+}
+
+.contactForm textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.contactFormNameEmail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.contactForm button {
+    background-color: transparent;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--Colour5);
+    color: var(--AccentColour);
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+    border: none;
+}
+
+.contactForm button:hover {
+    box-shadow: inset 0 0 0 2px var(--AccentColour), 0 0 1px rgb(0 0 0 / 0%);
+}
 
 
 @media screen and (max-width: 1250px) {
+
+    .projectSection {
+        margin-top: 35vh;
+    }
+
     .projectsGrid {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
@@ -359,10 +446,18 @@ html {
         width: calc((100vw - 6rem - 150px)/2);
     }
 
-    
+    .contactContainer {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
+
+    .projectSection {
+        margin-top: 50vh;
+    }
+
     .projectsGrid {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto;
@@ -380,10 +475,7 @@ html {
     }
 }
 
-.contactSection {
-    height: 100vh;
 
-}
 
 ::-webkit-scrollbar-track {
     background-color: transparent;
@@ -601,5 +693,15 @@ html {
     .project {
         width: calc((100vw - 2rem)*0.9);
     }
+
+    .contactContainer {
+        width: 100%;
+    }
+
+    .contactFormNameEmail {
+        flex-direction: column;
+        gap: 0px;
+    }
+    
 
 }
