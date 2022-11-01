@@ -440,6 +440,10 @@ html {
         margin-top: 35vh;
     }
 
+    .skillsSection {
+        margin-top: 35vh;
+    }
+
     .projectsGrid {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
@@ -666,22 +670,23 @@ html {
     }
 
     .aboutSection {
-        height: calc(100vh - 75px);
+        min-height: calc(100vh - 75px);
+        height: auto;
     }
 
     .skillsSection {
-        margin-top: 35vh;
         min-height: calc(100vh - 75px);
         height: auto;
     }
 
     .projectSection {
-        height: auto;
         min-height: calc(100vh - 75px);
+        height: auto;
     }
 
     .contactSection {
-        height: calc(100vh - 75px);
+        min-height: calc(100vh - 75px);
+        height: auto;
     }
 
     .skillsSection>div>div {
